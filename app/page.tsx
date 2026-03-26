@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import React from 'react'
 
-export default function Home(){
-  return(
+const page = () => {
+  return (
     <div>
-      <Button className="p-4 mx-auto border border-black cursor-pointer bg-red-300" variant={"ghost"}>
-        ShadCn
-      </Button>
+      
     </div>
   )
 }
+
+export default page
