@@ -1,6 +1,21 @@
+
+'use client'
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(()=>{
+    // testing new updates 
+    const fethcData = async () =>{
+      const res = await fetch("/api/v1")
+      const data = await res.json()
+
+      console.log(data)
+    }
+
+    fethcData()
+  }, [])
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
